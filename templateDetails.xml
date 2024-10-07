@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
+<extension version="2.5" type="template" client="site">
+	<name>gorsovet</name>
+	<creationDate>2024</creationDate>
+	<author>КУП Центр информационных технологий</author>
+	<authorEmail>email@gmail.com</authorEmail>
+	<authorUrl></authorUrl>
+	<copyright>Copyright (C) 2005 - 2012 Open Source Matters, Inc. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<version>2.5.6</version>
+	<description>TPL_GORSOVET_XML_DESCRIPTION</description>
+
+	<files> 
+		<filename>index.html</filename>
+		<filename>index.php</filename>
+		<filename>templateDetails.xml</filename>
+		<filename>favicon.ico</filename>
+		<filename>error.php</filename>
+		<folder>css</folder>
+		<folder>html</folder>
+		<folder>img</folder>
+		<folder>language</folder>
+		<folder>js</folder>
+	</files>
+
+	<positions>
+		<position>custom-position</position>
+		<position>menu</position>
+		<position>gerb</position>
+		<position>grafik</position>
+		<position>map-dep</position>
+			<position>internet</position>
+			<position>grafik-raboty-novy</position>
+					<position>telephons</position>
+					<position>position-3</position>
+					<position>writeletter</position>
+					<position>writeletter1</position>
+					<position>writeletter2</position>
+					<position>writeletter3</position>
+					<position>copyright</position>
+					<position>news</position>
+		<!-- <position></position>-->
+	</positions>
+
+	<!-- 	For core templates, we also install/uninstall the language files in the core language folders.
+	-->
+	<languages folder="language">
+		<language tag="ru-RU">ru-RU/ru-RU.tpl_gorsovet.ini</language>
+		<language tag="ru-RU">ru-RU/ru-RU.tpl_gorsovet.sys.ini</language>
+	</languages>
+
+	<config>
+		<fields name="params">
+			<fieldset name="advanced">
+				<field name="templateColor" class="" type="color" default="#665c52"
+					label="TPL_GORSOVET_COLOR_LABEL"
+					description="TPL_GORSOVET_COLOR_DESC" />
+
+				<field name="templateBackgroundColor" class="" type="color" default="#f3f3f3"
+					label="TPL_GORSOVET_BACKGROUND_COLOR_LABEL"
+					description="TPL_GORSOVET_BACKGROUND_COLOR_DESC" />
+
+				
+				<field name="templateWidth"  type="text" default=""
+					label="TPL_GORSOVET_JGLOBAL_WIDTH"
+					description="TPL_GORSOVET_JFIELD_WIDTH"
+					filter="string" />
+					
+
+				<field name="googleFont"
+					type="radio"
+					class="btn-group btn-group-yesno"
+					default="1"
+					label="TPL_GORSOVET_FONT_LABEL"
+					description="TPL_GORSOVET_FONT_DESC"
+				>
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+
+				<field name="googleFontName" class="" type="text" default="Open+Sans"
+					label="TPL_GORSOVET_FONT_NAME_LABEL"
+					description="TPL_GORSOVET_FONT_NAME_DESC" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

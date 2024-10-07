@@ -78,6 +78,8 @@ $doc->addCustomTag('<meta property="og:image:width" content="200"/>');
     <link rel="stylesheet" href="/templates/gorsovet/css/bootstrap.css" type="text/css" />
     <link rel="stylesheet" href="/templates/gorsovet/css/style.css" type="text/css" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+
 </head>
 <body class="site <?php echo $option
 	. ' view-' . $view
@@ -97,133 +99,96 @@ $doc->addCustomTag('<meta property="og:image:width" content="200"/>');
 <div class="container-fluid wrapper">
 	<header>
 
-	
-<span>
-		<img  class="logo" src="templates/gorsovet/logo.jpg"></span>
-	<span class="text2">
-		 Минский городской Совет депутатов</span><span class="poisk">
-		<input type="text" placeholder="Поиск по сайту" id="UsersPassword" style="background-image: url(templates/gorsovet/search.jpg);  background-repeat: no-repeat;  
-          background-position: right; background-color: white;">
+
+
+
+  
+  <table class="iksweb">
+	<tbody>
+		
+			
+    <tr>
+    <td rowspan="2">
+  <jdoc:include type="modules" name="gerb" style="" /> </td>
+  <td rowspan="2" align="left"><span class="text2"><b>
+		  Минский городской<br>  Совет депутатов</b></span>
 
 </span>
+</td>
+<td><div style="
+    padding-left: 950px;"><span class="poisk"><br><br>
 
-	<hr>
+    <jdoc:include type="modules" name="custom-position" style="" /></span> </div>  </td>
+		</tr>
+		<tr>
+			<td>
+
+
+    <hr>
+     <div class="elements1" id="one"> <div class="element1"><b> <jdoc:include type="modules" name="position-3" style="" /> </b></div></div>
+     </td>
+     </tr>
+
+	</tbody>
+</table>
+
+
+
 	</header>
-	
 
-	
 	<content >
-		<jdoc:include type="component" />
-		<div style="position: relative;">
-		 <div style="position: absolute; z-index: 1;">
-		<img src="templates/gorsovet/picture.jpg">
-</div><br>
-		<div class="component" style="position: absolute; z-index: 2;">
-<p class="grafik1"><strong>ГРАФИК ПРИЕМА ГРАЖДАН ДЕПУТАТАМИ МИНСКОГО ГОРОДСКОГО СОВЕТА ДЕПУТАТОВ 29-ГО СОЗЫВА</strong></p>
-<br><br>
-<input type="text" class="street" placeholder="Улица"><br><br>
-<input type="text" class="house" placeholder="Дом"> 
-<input type="text" class="korpys" placeholder="Корпус"><br><br><br><br>
 
-<form>
-   <p><input type="button" class="b1" value="НАЙТИ"></p>
-  </form>
-
-  <br>
-<div class="september">
-<img src="templates/gorsovet/man.jpg"><span><span class="seven"><strong> 7 СЕНТЯБРЯ </strong></span><span class="den"><strong>– ЕДИНЫЙ ДЕНЬ ДЕПУТАТА</strong></span></span>
-
-<img src="templates/gorsovet/strelki.JPG" height="38px" widht="38px">
-</div></div></div><br><br><br><br>
-	 <div class="news">
+  <jdoc:include type="modules" name="grafik" style="" /> 
 
 <span class="different"> 
-К другим новостям>> 
-</span> 
-
-
-</div>
+<p class="k_drygim">К другим новостям>></p></span>
+   <br><br>
+   
+       <jdoc:include type="modules" name="news" style="" /> 
 <div class="useful_information">
 <div class="text">
-<p> Полезная информация </p>
+<p> Полезная информация</p>
 </div>
 <div class="elements" id="one">
 <div class="element">
 	<img src="templates/gorsovet/money.jpg"><br>
-Алгоритм получения поддержки в г. Минске <br>
-в соответствии с Указом Президента Республики<br> 
-Беларусь от 24.04.2020 №143 «О поддержке экономики»
-</div>
+<jdoc:include type="modules" name="writeletter" style="" /> </div>
 <div class="element">
-	<img src="templates/gorsovet/money.jpg"><br><br>
-	Бюджет г. Минска
-</div>
+	<img src="templates/gorsovet/money.jpg"><br>
+<jdoc:include type="modules" name="writeletter1" style="" /> </div>
 <div class="element">
-	<img src="templates/gorsovet/money.jpg"><br><br>
-	Инвестиционная программа г.Минска
-</div>
+	<img src="templates/gorsovet/money.jpg"><br>
+<jdoc:include type="modules" name="writeletter2" style="" /> </div>
 <div class="element">
-	<img src="templates/gorsovet/money.jpg"><br><br>
-	МОЛОДЁЖНЫЙ СОВЕТ
-</div>
-	 </div> </div>
-	 
+	<img src="templates/gorsovet/money.jpg"><br>
+<jdoc:include type="modules" name="writeletter3" style="" /> </div>
+</div> </div>
 <p class="text1"> Карта избирательных округов </p>
-<div class="map">
-<iframe src="templates/gorsovet/karta/belkarta.php" width="100%" height="650px"></iframe>
+<jdoc:include type="modules" name="map-dep" style="width:100%; height:650px;" /> 
 
-	 </div>
-
-
-
-	 
-	 <div class="address">
+  
+<div class="address">
 	 <div class="create-line">
-		
-	<p class="text">Минский городской совет депутатов</p> 
-	<p><img src="templates/gorsovet/Vector.jpg">220030, Минск, проспект Независимости 8</p> <br>
-	<p><img src="templates/gorsovet/Frame.jpg">Специалисты по обеспечению деятельности Мингорсовета:</p></td>
-	<p>приемная: т-н 218 00 28, факс 218 01 86</p>
-	<p>Тониева Ирина Михайловна: т/ф 218 01 84<br> помощник председателя Минского горсовета</p>
-	<p>Касабуцкая Дарья Владимировна: т-н 218 01 93</p> 
-	</div>
+		<div class="text3" style="padding-left: 22.78px;">
+<jdoc:include type="modules" name="telephons" style="" /> </div> </div> </div>
 
-<div class="grafik">
-<p><img src="templates/gorsovet/Frame1.jpg">График работы:</p>
-<p>пн-чт: 08.45 - 18.00</p>
-<p>пт: 08.45 – 16.45</p>
-<p>обеденный перерыв: 13.00-14.00</p>
-<p>сб-вс: выходной</p>
-</div>
-
-<div class="create-line1">
-	<div class="internet">
-<p>Интернет-ресурсы</p>
-<ul>
-  <li><p>Официальный сайт Президента Республики Беларусь</p></li>
-  <li><p>Государственные органы и организации Беларуси</p></li>
-  <li><p>Национальный правовой интернет-портал Республики Беларусь</p></li>
-  <li><p>Совет Министров Республики Беларусь</p> </li>
-  <li><p>Минский городской исполнительный комитет</p> </li>
-</ul>
-</div>
-	 </div>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
+<div class="grafik"><jdoc:include type="modules" name="grafik-raboty-novy" style="" /> </div>
+<div class="create-line1"><div class="internet">
+<jdoc:include type="modules" name="internet" style="" /> </div></div>
 	</content>
+<br>
+<br>
+<br>
+<br>
 
 	<footer>
 	<div class="Kyp">
 
 
-	Разработка и сопровождение КУП «Центр информационных технологий Мингорисполкома» © 2001—2024
+  <jdoc:include type="modules" name="copyright" style="" /> 
 
 </div>
 	</footer>
-</div>
 
 </body>
 </html>
